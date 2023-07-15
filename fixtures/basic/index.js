@@ -19,4 +19,4 @@ switch (a) {
     break
 }
 
-console.log(a, obj, add)
+console.log(a, obj, add, arr)

@@ -11,7 +11,9 @@ module.exports = {
     'plugin:yml/standard',
     'plugin:markdown/recommended'
   ],
-  plugins: [],
+  plugins: [
+    'html'
+  ],
   settings: {
     'import/resolver': {
       node: { extensions: ['.js', '.mjs'] }
@@ -23,6 +25,7 @@ module.exports = {
     '*.d.ts',
     'CHANGELOG.md',
     'dist',
+    'node_modules',
     'LICENSE*',
     'output',
     'out',
