@@ -1,0 +1,25 @@
+{
+  "name": "@tooz/eslint-config",
+  "version": "0.0.0",
+  "packageManager": "pnpm@8.6.6",
+  "description": "tooz general eslint configuration",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "eslint . --config=index.js"
+  },
+  "author": "coder",
+  "keywords": [
+    "eslint-config"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@tooz/eslint-config-vue": "workspace:*",
+    "eslint": "^8.44.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  }
+}
