@@ -1,13 +1,16 @@
 {
   "name": "@tooz/eslint-config-ts",
   "version": "0.0.0",
-  "packageManager": "pnpm@8.6.6",
   "description": "tooz general eslint configuration for typescript",
   "author": "coder",
   "license": "MIT",
-  "keywords": ["eslint-config"],
+  "keywords": [
+    "eslint-config"
+  ],
   "main": "index.js",
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "lint": "eslint . --config=index.js"
   },
@@ -16,5 +19,9 @@
   },
   "devDependencies": {
     "eslint": "^8.44.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^6.0.0"
   }
 }

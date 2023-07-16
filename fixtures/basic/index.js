@@ -19,4 +19,6 @@ switch (a) {
     break
 }
 
+const value = arr?.length
+
 console.log(a, obj, add, arr)

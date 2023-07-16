@@ -1,7 +1,6 @@
 {
   "name": "@tooz/eslint-config-vue",
   "version": "0.0.0",
-  "packageManager": "pnpm@8.6.6",
   "description": "tooz general eslint configuration for vue3",
   "author": "coder",
   "license": "MIT",
@@ -14,8 +13,10 @@
   "peerDependencies": {
     "eslint": ">=7.4.0"
   },
+  "dependencies": {
+    "@tooz/eslint-config-basic": "workspace:*"
+  },
   "devDependencies": {
-    "@tooz/eslint-config-basic": "workspace:*",
     "eslint": "^8.44.0"
   }
 }

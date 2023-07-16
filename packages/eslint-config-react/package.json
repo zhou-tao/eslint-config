@@ -1,0 +1,22 @@
+{
+  "name": "@tooz/eslint-config-react",
+  "version": "0.0.0",
+  "description": "tooz general eslint configuration for vue3",
+  "author": "coder",
+  "license": "MIT",
+  "keywords": ["eslint-config"],
+  "main": "index.js",
+  "files": ["index.js"],
+  "scripts": {
+    "lint": "eslint . --config=index.js"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
+  "dependencies": {
+    "@tooz/eslint-config-basic": "workspace:*"
+  },
+  "devDependencies": {
+    "eslint": "^8.44.0"
+  }
+}
