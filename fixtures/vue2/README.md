@@ -1,1 +1,3 @@
-# Vue2 Starter
+# fixture-vue2
+
+### lint for vite + vue2

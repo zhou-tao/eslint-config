@@ -78,6 +78,7 @@ module.exports = {
       files: ['package.json'],
       parser: 'jsonc-eslint-parser',
       rules: {
+        'jsonc/array-bracket-newline': 'off',
         'jsonc/sort-keys': [
           'error',
           {

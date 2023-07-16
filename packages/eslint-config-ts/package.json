@@ -5,23 +5,23 @@
   "author": "coder",
   "license": "MIT",
   "keywords": [
-    "eslint-config"
+    "eslint-config",
+    "typescript"
   ],
   "main": "index.js",
-  "files": [
-    "index.js"
-  ],
+  "files": ["index.js"],
   "scripts": {
     "lint": "eslint . --config=index.js"
   },
   "peerDependencies": {
     "eslint": ">=7.4.0"
   },
-  "devDependencies": {
-    "eslint": "^8.44.0"
-  },
   "dependencies": {
+    "@tooz/eslint-config-basic": "workspace:^0.0.0",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^6.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.44.0"
   }
 }

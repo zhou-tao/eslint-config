@@ -21,4 +21,4 @@ switch (a) {
 
 const value = arr?.length
 
-console.log(a, obj, add, arr)
+console.log(a, obj, add, arr, value)

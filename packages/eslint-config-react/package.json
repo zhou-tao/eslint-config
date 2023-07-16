@@ -4,7 +4,7 @@
   "description": "tooz general eslint configuration for vue3",
   "author": "coder",
   "license": "MIT",
-  "keywords": ["eslint-config"],
+  "keywords": ["eslint-config", "react"],
   "main": "index.js",
   "files": ["index.js"],
   "scripts": {
