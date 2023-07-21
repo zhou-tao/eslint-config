@@ -1,7 +1,7 @@
 {
-  "name": "@tooz/eslint-config-ts",
+  "name": "@toryz/eslint-config-ts",
   "version": "0.0.0",
-  "description": "tooz general eslint configuration for typescript",
+  "description": "toryz general eslint configuration for typescript",
   "author": "coder",
   "license": "MIT",
   "keywords": [
@@ -14,10 +14,11 @@
     "lint": "eslint . --config=index.js"
   },
   "peerDependencies": {
-    "eslint": ">=7.4.0"
+    "eslint": ">=7.4.0",
+    "typescript": ">=3.9"
   },
   "dependencies": {
-    "@tooz/eslint-config-basic": "workspace:^0.0.0",
+    "@toryz/eslint-config-basic": "workspace:^0.0.0",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^6.0.0"
   },

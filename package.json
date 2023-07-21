@@ -1,17 +1,17 @@
 {
-  "name": "@tooz/eslint-config-monorepo",
+  "name": "@toryz/eslint-config-monorepo",
   "version": "0.0.0",
   "private": true,
-  "author": "tooz",
+  "author": "toryz",
   "license": "MIT",
   "scripts": {
     "lint": "eslint .",
     "release": "bumpp -r && pnpm -r publish"
   },
   "devDependencies": {
-    "@tooz/eslint-config": "workspace:*",
-    "@tooz/eslint-config-react": "workspace:^*",
-    "@tooz/eslint-config-vue2": "workspace:^*",
+    "@toryz/eslint-config": "workspace:*",
+    "@toryz/eslint-config-react": "workspace:^*",
+    "@toryz/eslint-config-vue2": "workspace:^*",
     "bumpp": "^9.1.1",
     "eslint": "^8.44.0"
   }

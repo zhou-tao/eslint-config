@@ -1,7 +1,7 @@
 {
-  "name": "@tooz/eslint-config-vue",
+  "name": "@toryz/eslint-config-vue",
   "version": "0.0.0",
-  "description": "tooz general eslint configuration for vue3",
+  "description": "toryz general eslint configuration for vue3",
   "author": "coder",
   "license": "MIT",
   "keywords": [
@@ -20,8 +20,8 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@tooz/eslint-config-basic": "workspace:^0.0.0",
-    "@tooz/eslint-config-ts": "workspace:*",
+    "@toryz/eslint-config-basic": "workspace:^0.0.0",
+    "@toryz/eslint-config-ts": "workspace:*",
     "eslint-plugin-vue": "^9.15.1"
   },
   "devDependencies": {

@@ -1,3 +1,3 @@
-# @tooz/eslint-config-ts
+# @toryz/eslint-config-ts
 
 lint for typescript

@@ -1,3 +1,3 @@
-# @tooz/eslint-config-react
+# @toryz/eslint-config-react
 
 lint for vite + react

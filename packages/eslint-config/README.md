@@ -1,13 +1,13 @@
-# @tooz/eslint-config
+# @toryz/eslint-config
 
-[![npm](https://img.shields.io/npm/v/@tooz/eslint-config?color=1dd1a1&label=)](https://npmjs.com/package/@tooz/eslint-config)
+[![npm](https://img.shields.io/npm/v/@toryz/eslint-config?color=1dd1a1&label=)](https://npmjs.com/package/@toryz/eslint-config)
 
 Refer to [@antfu/eslint-config](https://github.com/antfu/eslint-config).
 
 ### Install
 
 ```bash
-pnpm add eslint @tooz/eslint-config -D
+pnpm add eslint @toryz/eslint-config -D
 ```
 
 ### Usage
@@ -15,7 +15,7 @@ pnpm add eslint @tooz/eslint-config -D
 ##### add `.eslintrc`
 ```jsonc
 {
-  "extends": "@tooz",
+  "extends": "@toryz",
   "rules": {
     // your custom rules
   }

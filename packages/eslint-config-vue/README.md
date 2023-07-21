@@ -1,3 +1,3 @@
-# @tooz/eslint-config-vue
+# @toryz/eslint-config-vue
 
 lint for vite + vue3

@@ -4,24 +4,24 @@ importers:
 
   .:
     specifiers:
-      '@tooz/eslint-config': workspace:*
-      '@tooz/eslint-config-react': workspace:^*
-      '@tooz/eslint-config-vue2': workspace:^*
+      '@toryz/eslint-config': workspace:*
+      '@toryz/eslint-config-react': workspace:^*
+      '@toryz/eslint-config-vue2': workspace:^*
       bumpp: ^9.1.1
       eslint: ^8.44.0
     devDependencies:
-      '@tooz/eslint-config': link:packages/eslint-config
-      '@tooz/eslint-config-react': link:packages/eslint-config-react
-      '@tooz/eslint-config-vue2': link:packages/eslint-config-vue2
+      '@toryz/eslint-config': link:packages/eslint-config
+      '@toryz/eslint-config-react': link:packages/eslint-config-react
+      '@toryz/eslint-config-vue2': link:packages/eslint-config-vue2
       bumpp: 9.1.1
       eslint: 8.44.0
 
   packages/eslint-config:
     specifiers:
-      '@tooz/eslint-config-vue': workspace:*
+      '@toryz/eslint-config-vue': workspace:*
       eslint: ^8.44.0
     dependencies:
-      '@tooz/eslint-config-vue': link:../eslint-config-vue
+      '@toryz/eslint-config-vue': link:../eslint-config-vue
     devDependencies:
       eslint: 8.44.0
 
@@ -54,21 +54,21 @@ importers:
 
   packages/eslint-config-react:
     specifiers:
-      '@tooz/eslint-config-basic': workspace:*
+      '@toryz/eslint-config-basic': workspace:*
       eslint: ^8.44.0
     dependencies:
-      '@tooz/eslint-config-basic': link:../eslint-config-basic
+      '@toryz/eslint-config-basic': link:../eslint-config-basic
     devDependencies:
       eslint: 8.44.0
 
   packages/eslint-config-ts:
     specifiers:
-      '@tooz/eslint-config-basic': workspace:^0.0.0
+      '@toryz/eslint-config-basic': workspace:^0.0.0
       '@typescript-eslint/eslint-plugin': ^5.60.1
       '@typescript-eslint/parser': ^6.0.0
       eslint: ^8.44.0
     dependencies:
-      '@tooz/eslint-config-basic': link:../eslint-config-basic
+      '@toryz/eslint-config-basic': link:../eslint-config-basic
       '@typescript-eslint/eslint-plugin': 5.60.1_vx4g46bbq3n2ecj27rlvssnmpi
       '@typescript-eslint/parser': 6.0.0_eslint@8.44.0
     devDependencies:
@@ -76,24 +76,24 @@ importers:
 
   packages/eslint-config-vue:
     specifiers:
-      '@tooz/eslint-config-basic': workspace:^0.0.0
-      '@tooz/eslint-config-ts': workspace:*
+      '@toryz/eslint-config-basic': workspace:^0.0.0
+      '@toryz/eslint-config-ts': workspace:*
       eslint: ^8.44.0
       eslint-plugin-vue: ^9.15.1
     dependencies:
-      '@tooz/eslint-config-basic': link:../eslint-config-basic
-      '@tooz/eslint-config-ts': link:../eslint-config-ts
+      '@toryz/eslint-config-basic': link:../eslint-config-basic
+      '@toryz/eslint-config-ts': link:../eslint-config-ts
       eslint-plugin-vue: 9.15.1_eslint@8.44.0
     devDependencies:
       eslint: 8.44.0
 
   packages/eslint-config-vue2:
     specifiers:
-      '@tooz/eslint-config-basic': workspace:^0.0.0
+      '@toryz/eslint-config-basic': workspace:^0.0.0
       eslint: ^8.44.0
       eslint-plugin-vue: ^9.15.1
     dependencies:
-      '@tooz/eslint-config-basic': link:../eslint-config-basic
+      '@toryz/eslint-config-basic': link:../eslint-config-basic
       eslint-plugin-vue: 9.15.1_eslint@8.44.0
     devDependencies:
       eslint: 8.44.0

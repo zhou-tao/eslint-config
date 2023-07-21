@@ -1,7 +1,7 @@
 {
-  "name": "@tooz/eslint-config-vue2",
+  "name": "@toryz/eslint-config-vue2",
   "version": "0.0.0",
-  "description": "tooz general eslint configuration for vue2",
+  "description": "toryz general eslint configuration for vue2",
   "author": "coder",
   "license": "MIT",
   "keywords": ["eslint-config", "vue2"],
@@ -14,7 +14,7 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@tooz/eslint-config-basic": "workspace:^0.0.0",
+    "@toryz/eslint-config-basic": "workspace:^0.0.0",
     "eslint-plugin-vue": "^9.15.1"
   },
   "devDependencies": {

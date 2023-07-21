@@ -1,3 +1,3 @@
-# @tooz/eslint-config-basic
+# @toryz/eslint-config-basic
 
 ### lint for vanilla

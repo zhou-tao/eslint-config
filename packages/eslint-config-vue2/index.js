@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
     'plugin:vue/recommended',
-    '@tooz/eslint-config-basic'
+    '@toryz/eslint-config-basic'
   ],
   overrides: [
     {

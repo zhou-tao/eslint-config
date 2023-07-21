@@ -1,8 +1,8 @@
 {
-  "name": "@tooz/eslint-config-basic",
+  "name": "@toryz/eslint-config-basic",
   "version": "0.0.0",
-  "description": "tooz general eslint configuration for basic",
-  "author": "tooz",
+  "description": "toryz general eslint configuration for basic",
+  "author": "toryz",
   "license": "MIT",
   "keywords": ["eslint-config"],
   "main": "index.js",

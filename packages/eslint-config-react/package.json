@@ -1,7 +1,7 @@
 {
-  "name": "@tooz/eslint-config-react",
+  "name": "@toryz/eslint-config-react",
   "version": "0.0.0",
-  "description": "tooz general eslint configuration for vue3",
+  "description": "toryz general eslint configuration for vue3",
   "author": "coder",
   "license": "MIT",
   "keywords": ["eslint-config", "react"],
@@ -14,7 +14,7 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@tooz/eslint-config-basic": "workspace:*"
+    "@toryz/eslint-config-basic": "workspace:*"
   },
   "devDependencies": {
     "eslint": "^8.44.0"

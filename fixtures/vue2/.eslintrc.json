@@ -1,4 +1,4 @@
 {
   "root": true,
-  "extends": "@tooz/vue2"
+  "extends": "@toryz/vue2"
 }
