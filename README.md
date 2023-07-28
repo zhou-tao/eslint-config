@@ -15,6 +15,7 @@ pnpm add eslint @toryz/eslint-config -D
 ##### add `.eslintrc`
 ```jsonc
 {
+  "root": true,
   "extends": "@toryz",
   "rules": {
     // your custom rules

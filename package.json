@@ -11,8 +11,10 @@
   "devDependencies": {
     "@toryz/eslint-config": "workspace:*",
     "@toryz/eslint-config-react": "workspace:^*",
+    "@toryz/eslint-config-svelte": "workspace:^*",
     "@toryz/eslint-config-vue2": "workspace:^*",
     "bumpp": "^9.1.1",
-    "eslint": "^8.44.0"
+    "eslint": "^8.44.0",
+    "typescript": "^5.1.6"
   }
 }

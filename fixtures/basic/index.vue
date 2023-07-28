@@ -1,17 +1,12 @@
-<template>
-  <div>
-
-
-
-    
-  </div>
-</template>
-
 <script>
 export default {
 
 }
 </script>
+
+<template>
+  <div />
+</template>
 
 <style>
 

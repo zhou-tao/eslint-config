@@ -1,18 +1,12 @@
 {
-  "name": "@toryz/eslint-config-vue",
+  "name": "@toryz/eslint-config-svelte",
   "version": "0.0.0",
   "description": "toryz general eslint configuration for vue3",
   "author": "coder",
   "license": "MIT",
-  "keywords": [
-    "eslint-config",
-    "vue3",
-    "typescript"
-  ],
+  "keywords": ["eslint-config", "svelte"],
   "main": "index.js",
-  "files": [
-    "index.js"
-  ],
+  "files": ["index.js"],
   "scripts": {
     "lint": "eslint . --config=index.js"
   },
@@ -20,10 +14,7 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@toryz/eslint-config-basic": "workspace:^*",
-    "@toryz/eslint-config-ts": "workspace:*",
-    "eslint-plugin-vue": "^9.15.1",
-    "local-pkg": "^0.4.3"
+    "@toryz/eslint-config-basic": "workspace:*"
   },
   "devDependencies": {
     "eslint": "^8.44.0"

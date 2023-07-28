@@ -42,6 +42,8 @@ module.exports = {
     '__snapshots__',
     // ignore for in lint-staged
     '*.css',
+    '*.scss',
+    '*.less',
     '*.png',
     '*.ico',
     '*.toml',
