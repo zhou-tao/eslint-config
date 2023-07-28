@@ -1,6 +1,6 @@
 # @toryz/eslint-config
 
-[![npm](https://img.shields.io/npm/v/@toryz/eslint-config?color=1dd1a1&label=)](https://npmjs.com/package/@toryz/eslint-config)
+[![npm](https://img.shields.io/npm/v/@toryz/eslint-config?color=ffb&label=)](https://npmjs.com/package/@toryz/eslint-config)
 
 Refer to [@antfu/eslint-config](https://github.com/antfu/eslint-config).
 
@@ -22,6 +22,8 @@ pnpm add eslint @toryz/eslint-config -D
   }
 }
 ```
+
+tips: if you working on react or svelte, please use `@toryz/react` or `toryz/svelte` to instead it.
 
 ##### add scripts in `package.json`
 ```jsonc
@@ -59,6 +61,7 @@ Add the following settings to your `settings.json`:
     "typescript",
     "typescriptreact",
     "vue",
+    "svelte",
     "html",
     "markdown",
     "json",
