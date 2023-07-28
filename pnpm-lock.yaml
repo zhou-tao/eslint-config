@@ -28,7 +28,6 @@ importers:
       '@vitejs/plugin-react': ^4.0.3
       react: ^18.2.0
       react-dom: ^18.2.0
-      typescript: ^5.0.2
       vite: ^4.4.5
     dependencies:
       react: 18.2.0
@@ -37,7 +36,6 @@ importers:
       '@types/react': 18.2.17
       '@types/react-dom': 18.2.7
       '@vitejs/plugin-react': 4.0.3_vite@4.4.7
-      typescript: 5.1.6
       vite: 4.4.7
 
   fixtures/svelte-ts:
@@ -47,7 +45,6 @@ importers:
       svelte: ^4.0.5
       svelte-check: ^3.4.6
       tslib: ^2.6.0
-      typescript: ^5.0.2
       vite: ^4.4.5
     devDependencies:
       '@sveltejs/vite-plugin-svelte': 2.4.3_svelte@4.1.1+vite@4.4.7
@@ -55,13 +52,11 @@ importers:
       svelte: 4.1.1
       svelte-check: 3.4.6_svelte@4.1.1
       tslib: 2.6.1
-      typescript: 5.1.6
       vite: 4.4.7
 
   fixtures/vue-ts:
     specifiers:
       '@vitejs/plugin-vue': ^4.2.3
-      typescript: ^5.0.2
       vite: ^4.4.5
       vue: ^3.3.4
       vue-tsc: ^1.8.5
@@ -69,9 +64,8 @@ importers:
       vue: 3.3.4
     devDependencies:
       '@vitejs/plugin-vue': 4.2.3_vite@4.4.7+vue@3.3.4
-      typescript: 5.1.6
       vite: 4.4.7
-      vue-tsc: 1.8.8_typescript@5.1.6
+      vue-tsc: 1.8.8
 
   packages/eslint-config:
     specifiers:
@@ -111,12 +105,12 @@ importers:
 
   packages/eslint-config-react:
     specifiers:
-      '@toryz/eslint-config-basic': workspace:*
+      '@toryz/eslint-config-ts': workspace:*
       eslint: ^8.44.0
       eslint-plugin-react-hooks: ^4.6.0
       eslint-plugin-react-refresh: ^0.4.3
     dependencies:
-      '@toryz/eslint-config-basic': link:../eslint-config-basic
+      '@toryz/eslint-config-ts': link:../eslint-config-ts
       eslint-plugin-react-hooks: 4.6.0_eslint@8.44.0
       eslint-plugin-react-refresh: 0.4.3_eslint@8.44.0
     devDependencies:
@@ -124,10 +118,12 @@ importers:
 
   packages/eslint-config-svelte:
     specifiers:
-      '@toryz/eslint-config-basic': workspace:*
+      '@toryz/eslint-config-ts': workspace:*
       eslint: ^8.44.0
+      eslint-plugin-svelte: ^2.32.4
     dependencies:
-      '@toryz/eslint-config-basic': link:../eslint-config-basic
+      '@toryz/eslint-config-ts': link:../eslint-config-ts
+      eslint-plugin-svelte: 2.32.4_eslint@8.44.0
     devDependencies:
       eslint: 8.44.0
 
@@ -1034,7 +1030,7 @@ packages:
       '@vue/compiler-dom': 3.3.4
       '@vue/shared': 3.3.4
 
-  /@vue/language-core/1.8.8_typescript@5.1.6:
+  /@vue/language-core/1.8.8:
     resolution: {integrity: sha512-i4KMTuPazf48yMdYoebTkgSOJdFraE4pQf0B+FTOFkbB+6hAfjrSou/UmYWRsWyZV6r4Rc6DDZdI39CJwL0rWw==}
     peerDependencies:
       typescript: '*'
@@ -1049,7 +1045,6 @@ packages:
       '@vue/shared': 3.3.4
       minimatch: 9.0.3
       muggle-string: 0.3.1
-      typescript: 5.1.6
       vue-template-compiler: 2.7.14
     dev: true
 
@@ -1092,11 +1087,11 @@ packages:
   /@vue/shared/3.3.4:
     resolution: {integrity: sha512-7OjdcV8vQ74eiz1TZLzZP4JwqM5fA94K6yntPS5Z25r9HDuGNzaGdgvwKYq6S+MxwF0TFRwe50fIR/MYnakdkQ==}
 
-  /@vue/typescript/1.8.8_typescript@5.1.6:
+  /@vue/typescript/1.8.8:
     resolution: {integrity: sha512-jUnmMB6egu5wl342eaUH236v8tdcEPXXkPgj+eI/F6JwW/lb+yAU6U07ZbQ3MVabZRlupIlPESB7ajgAGixhow==}
     dependencies:
       '@volar/typescript': 1.10.0
-      '@vue/language-core': 1.8.8_typescript@5.1.6
+      '@vue/language-core': 1.8.8
     transitivePeerDependencies:
       - typescript
     dev: true
@@ -1842,6 +1837,33 @@ packages:
       eslint: 8.44.0
     dev: false
 
+  /eslint-plugin-svelte/2.32.4_eslint@8.44.0:
+    resolution: {integrity: sha512-VJ12i2Iogug1jvhwxSlognnfGj76P5gks/V4pUD4SCSVQOp14u47MNP0zAG8AQR3LT0Fi1iUvIFnY4l9z5Rwbg==}
+    engines: {node: ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: ^7.0.0 || ^8.0.0-0
+      svelte: ^3.37.0 || ^4.0.0
+    peerDependenciesMeta:
+      svelte:
+        optional: true
+    dependencies:
+      '@eslint-community/eslint-utils': 4.4.0_eslint@8.44.0
+      '@jridgewell/sourcemap-codec': 1.4.15
+      debug: 4.3.4
+      eslint: 8.44.0
+      esutils: 2.0.3
+      known-css-properties: 0.28.0
+      postcss: 8.4.27
+      postcss-load-config: 3.1.4_postcss@8.4.27
+      postcss-safe-parser: 6.0.0_postcss@8.4.27
+      postcss-selector-parser: 6.0.13
+      semver: 7.5.3
+      svelte-eslint-parser: 0.32.2
+    transitivePeerDependencies:
+      - supports-color
+      - ts-node
+    dev: false
+
   /eslint-plugin-vue/9.15.1_eslint@8.44.0:
     resolution: {integrity: sha512-CJE/oZOslvmAR9hf8SClTdQ9JLweghT6JCBQNrT2Iel1uVw0W0OLJxzvPd6CxmABKCvLrtyDnqGV37O7KQv6+A==}
     engines: {node: ^14.17.0 || >=16.0.0}
@@ -2502,12 +2524,21 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  /known-css-properties/0.28.0:
+    resolution: {integrity: sha512-9pSL5XB4J+ifHP0e0jmmC98OGC1nL8/JjS+fi6mnTlIf//yt/MfVLtKg7S6nCtj/8KTcWX7nRlY0XywoYY1ISQ==}
+    dev: false
+
   /levn/0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
     dependencies:
       prelude-ls: 1.2.1
       type-check: 0.4.0
+
+  /lilconfig/2.1.0:
+    resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
+    engines: {node: '>=10'}
+    dev: false
 
   /local-pkg/0.4.3:
     resolution: {integrity: sha512-SFppqq5p42fe2qcZQqqEOiVRXl+WCP1MdT6k7BDEW1j++sp5fIY+/fdRQitvKgB5BrBcmrs5m/L0v2FrU5MY1g==}
@@ -2841,6 +2872,41 @@ packages:
       pathe: 1.1.1
     dev: true
 
+  /postcss-load-config/3.1.4_postcss@8.4.27:
+    resolution: {integrity: sha512-6DiM4E7v4coTE4uzA8U//WhtPwyhiim3eyjEMFCnUpzbrkK9wJHgKDT2mR+HbtSrd/NubVaYTOpSpjUl8NQeRg==}
+    engines: {node: '>= 10'}
+    peerDependencies:
+      postcss: '>=8.0.9'
+      ts-node: '>=9.0.0'
+    peerDependenciesMeta:
+      postcss:
+        optional: true
+      ts-node:
+        optional: true
+    dependencies:
+      lilconfig: 2.1.0
+      postcss: 8.4.27
+      yaml: 1.10.2
+    dev: false
+
+  /postcss-safe-parser/6.0.0_postcss@8.4.27:
+    resolution: {integrity: sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==}
+    engines: {node: '>=12.0'}
+    peerDependencies:
+      postcss: ^8.3.3
+    dependencies:
+      postcss: 8.4.27
+    dev: false
+
+  /postcss-scss/4.0.6_postcss@8.4.27:
+    resolution: {integrity: sha512-rLDPhJY4z/i4nVFZ27j9GqLxj1pwxE80eAzUNRMXtcpipFYIeowerzBgG3yJhMtObGEXidtIgbUpQ3eLDsf5OQ==}
+    engines: {node: '>=12.0'}
+    peerDependencies:
+      postcss: ^8.4.19
+    dependencies:
+      postcss: 8.4.27
+    dev: false
+
   /postcss-selector-parser/6.0.13:
     resolution: {integrity: sha512-EaV1Gl4mUEV4ddhDnv/xtj7sxwrwxdetHdWUGnT4VJQf+4d05v6lHYZr8N573k5Z0BViss7BDhfWtKS3+sfAqQ==}
     engines: {node: '>=4'}
@@ -3144,6 +3210,22 @@ packages:
       - sugarss
     dev: true
 
+  /svelte-eslint-parser/0.32.2:
+    resolution: {integrity: sha512-Ok9D3A4b23iLQsONrjqtXtYDu5ZZ/826Blaw2LeFZVTg1pwofKDG4mz3/GYTax8fQ0plRGHI6j+d9VQYy5Lo/A==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      svelte: ^3.37.0 || ^4.0.0
+    peerDependenciesMeta:
+      svelte:
+        optional: true
+    dependencies:
+      eslint-scope: 7.2.0
+      eslint-visitor-keys: 3.4.1
+      espree: 9.6.0
+      postcss: 8.4.27
+      postcss-scss: 4.0.6_postcss@8.4.27
+    dev: false
+
   /svelte-hmr/0.15.2_svelte@4.1.1:
     resolution: {integrity: sha512-q/bAruCvFLwvNbeE1x3n37TYFb3mTBJ6TrCq6p2CoFbSTNhDE9oAtEfpy+wmc9So8AG0Tja+X0/mJzX9tSfvIg==}
     engines: {node: ^12.20 || ^14.13.1 || >= 16}
@@ -3427,16 +3509,15 @@ packages:
       he: 1.2.0
     dev: true
 
-  /vue-tsc/1.8.8_typescript@5.1.6:
+  /vue-tsc/1.8.8:
     resolution: {integrity: sha512-bSydNFQsF7AMvwWsRXD7cBIXaNs/KSjvzWLymq/UtKE36697sboX4EccSHFVxvgdBlI1frYPc/VMKJNB7DFeDQ==}
     hasBin: true
     peerDependencies:
       typescript: '*'
     dependencies:
-      '@vue/language-core': 1.8.8_typescript@5.1.6
-      '@vue/typescript': 1.8.8_typescript@5.1.6
+      '@vue/language-core': 1.8.8
+      '@vue/typescript': 1.8.8
       semver: 7.5.3
-      typescript: 5.1.6
     dev: true
 
   /vue/3.3.4:
@@ -3499,6 +3580,11 @@ packages:
       eslint-visitor-keys: 3.4.1
       lodash: 4.17.21
       yaml: 2.3.1
+    dev: false
+
+  /yaml/1.10.2:
+    resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
+    engines: {node: '>= 6'}
     dev: false
 
   /yaml/2.3.1:
