@@ -13,6 +13,10 @@
   "files": [
     "index.js"
   ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "peerDependencies": {
     "eslint": ">=7.4.0",
     "svelte": ">=3.0.0"
