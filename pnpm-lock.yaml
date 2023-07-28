@@ -7,7 +7,6 @@ importers:
       '@toryz/eslint-config': workspace:*
       '@toryz/eslint-config-react': workspace:^*
       '@toryz/eslint-config-svelte': workspace:^*
-      '@toryz/eslint-config-vue2': workspace:^*
       bumpp: ^9.1.1
       eslint: ^8.44.0
       typescript: ^5.1.6
@@ -15,7 +14,6 @@ importers:
       '@toryz/eslint-config': link:packages/eslint-config
       '@toryz/eslint-config-react': link:packages/eslint-config-react
       '@toryz/eslint-config-svelte': link:packages/eslint-config-svelte
-      '@toryz/eslint-config-vue2': link:packages/eslint-config-vue2
       bumpp: 9.1.1
       eslint: 8.44.0
       typescript: 5.1.6
@@ -99,17 +97,6 @@ importers:
       '@toryz/eslint-config-ts': link:../eslint-config-ts
       eslint-plugin-vue: 9.15.1_eslint@8.44.0
       local-pkg: 0.4.3
-    devDependencies:
-      eslint: 8.44.0
-
-  packages/eslint-config-vue2:
-    specifiers:
-      '@toryz/eslint-config-basic': workspace:^0.0.0
-      eslint: ^8.44.0
-      eslint-plugin-vue: ^9.15.1
-    dependencies:
-      '@toryz/eslint-config-basic': link:../eslint-config-basic
-      eslint-plugin-vue: 9.15.1_eslint@8.44.0
     devDependencies:
       eslint: 8.44.0
 
