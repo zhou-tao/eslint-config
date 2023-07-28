@@ -1,9 +1,10 @@
 {
   "name": "@toryz/eslint-config-react",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "toryz general eslint configuration for react",
-  "author": "coder",
+  "author": "toryz <zhoutao_233@163.com>",
   "license": "MIT",
+  "homepage": "https://github.com/zhou-tao/eslint-config",
   "keywords": [
     "eslint-config",
     "react"
@@ -12,9 +13,6 @@
   "files": [
     "index.js"
   ],
-  "scripts": {
-    "lint": "eslint . --config=index.js"
-  },
   "peerDependencies": {
     "eslint": ">=7.4.0",
     "react": ">=17.0.0",

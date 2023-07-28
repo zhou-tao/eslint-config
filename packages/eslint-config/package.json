@@ -1,15 +1,17 @@
 {
   "name": "@toryz/eslint-config",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "toryz general eslint configuration",
-  "author": "coder",
+  "author": "toryz <zhoutao_233@163.com>",
   "license": "MIT",
-  "keywords": ["eslint-config"],
+  "homepage": "https://github.com/zhou-tao/eslint-config",
+  "keywords": [
+    "eslint-config"
+  ],
   "main": "index.js",
-  "files": ["index.js"],
-  "scripts": {
-    "lint": "eslint . --config=index.js"
-  },
+  "files": [
+    "index.js"
+  ],
   "peerDependencies": {
     "eslint": ">=7.4.0"
   },
