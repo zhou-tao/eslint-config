@@ -1,20 +1,29 @@
 {
   "name": "@toryz/eslint-config-react",
   "version": "0.0.0",
-  "description": "toryz general eslint configuration for vue3",
+  "description": "toryz general eslint configuration for react",
   "author": "coder",
   "license": "MIT",
-  "keywords": ["eslint-config", "react"],
+  "keywords": [
+    "eslint-config",
+    "react"
+  ],
   "main": "index.js",
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "lint": "eslint . --config=index.js"
   },
   "peerDependencies": {
-    "eslint": ">=7.4.0"
+    "eslint": ">=7.4.0",
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
   },
   "dependencies": {
-    "@toryz/eslint-config-basic": "workspace:*"
+    "@toryz/eslint-config-basic": "workspace:*",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3"
   },
   "devDependencies": {
     "eslint": "^8.44.0"
