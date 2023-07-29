@@ -7,7 +7,14 @@ Refer to [@antfu/eslint-config](https://github.com/antfu/eslint-config).
 ### Install
 
 ```bash
+# for vue
 pnpm add eslint @toryz/eslint-config -D
+
+# for react
+pnpm add eslint @toryz/eslint-config-react -D
+
+# for svelte
+pnpm add eslint @toryz/eslint-config-svelte -D
 ```
 
 ### Usage
@@ -23,7 +30,7 @@ pnpm add eslint @toryz/eslint-config -D
 }
 ```
 
-tips: if you working on react or svelte, please use `@toryz/react` or `toryz/svelte` to instead it.
+Tips: if you working on react or svelte, please use `@toryz/react` or `@toryz/svelte` to instead it.
 
 ##### add scripts in `package.json`
 ```jsonc
