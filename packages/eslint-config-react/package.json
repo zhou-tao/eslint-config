@@ -1,6 +1,6 @@
 {
   "name": "@toryz/eslint-config-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "toryz general eslint configuration for react",
   "author": "toryz <zhoutao_233@163.com>",
   "license": "MIT",
