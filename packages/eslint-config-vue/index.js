@@ -21,15 +21,14 @@ module.exports = {
       rules: {
         'no-unused-vars': 'off',
         'no-undef': 'off',
-        'vue/script-indent': [2, 2, { baseIndent: 1 }],
+        'indent': 'off',
+        'vue/script-indent': ['error', 2, { baseIndent: 1, switchCase: 1 }],
         ...(TS
           ? {
               '@typescript-eslint/indent': 'off',
               '@typescript-eslint/no-unused-vars': 'off'
             }
-          : {
-              indent: 'off'
-            })
+          : null)
       }
     }
   ],

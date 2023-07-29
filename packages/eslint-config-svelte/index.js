@@ -9,6 +9,19 @@ module.exports = {
       parser: 'svelte-eslint-parser',
       parserOptions: {
         parser: '@typescript-eslint/parser'
+      },
+      rules: {
+        'import/no-mutable-exports': 'off',
+        '@typescript-eslint/indent': 'off',
+        'svelte/indent': [
+          'error',
+          {
+            indent: 2,
+            ignoredNodes: [],
+            switchCase: 1,
+            alignAttributesVertically: false
+          }
+        ]
       }
     }
   ]
