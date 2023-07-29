@@ -21,9 +21,15 @@ module.exports = {
       rules: {
         'no-unused-vars': 'off',
         'no-undef': 'off',
+        'vue/script-indent': [2, 2, { baseIndent: 1 }],
         ...(TS
-          ? { '@typescript-eslint/no-unused-vars': 'off' }
-          : null)
+          ? {
+              '@typescript-eslint/indent': 'off',
+              '@typescript-eslint/no-unused-vars': 'off'
+            }
+          : {
+              indent: 'off'
+            })
       }
     }
   ],
@@ -36,6 +42,7 @@ module.exports = {
     'vue/prefer-import-from-vue': 'off',
     'vue/no-v-text-v-html-on-component': 'off',
     'vue/no-dupe-keys': 'off',
+    'vue/script-indent': [2, 2, { baseIndent: 1 }],
 
     // reactivity transform
     'vue/no-setup-props-destructure': 'off',
