@@ -12,7 +12,7 @@ pnpm add eslint @toryz/eslint-config -D
 
 ### Usage
 
-##### add `.eslintrc`
+##### add `.eslintrc.json`
 ```jsonc
 {
   "root": true,
