@@ -22,7 +22,7 @@
     "typescript": ">=3.9"
   },
   "dependencies": {
-    "@toryz/eslint-config-basic": "workspace:^0.0.0",
+    "@toryz/eslint-config-basic": "workspace:*",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^6.0.0"
   },
