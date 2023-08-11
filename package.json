@@ -1,6 +1,6 @@
 {
   "name": "@toryz/eslint-config-monorepo",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": true,
   "author": "toryz <zhoutao_233@163.com>",
   "license": "MIT",
