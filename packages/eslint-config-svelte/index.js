@@ -21,6 +21,12 @@ module.exports = {
             switchCase: 1,
             alignAttributesVertically: false
           }
+        ],
+        'svelte/valid-compile': [
+          'error',
+          {
+            ignoreWarnings: true
+          }
         ]
       }
     }
