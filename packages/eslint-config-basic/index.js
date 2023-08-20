@@ -168,6 +168,7 @@ module.exports = {
     'import/no-unresolved': 'off',
     'import/no-absolute-path': 'off',
     'import/no-self-import': 'error',
+    'import/no-named-as-default': 'off',
     'import/newline-after-import': ['error', { count: 1, considerComments: true }],
 
     // Common
